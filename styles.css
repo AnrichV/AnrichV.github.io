@@ -1,4 +1,4 @@
-@import url("https://fonts.cdnfonts.com/css/nihonium113-console");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 :root {
   --background-color: #010a0a;
@@ -10,7 +10,7 @@
 body {
   display: flex;
   justify-content: center;
-  font-family: "Nihonium113", sans-serif;
+  font-family: "Space Mono", monospace;
   font-size: 1.75rem;
   color: var(--primary-font-color);
   background-color: var(--background-color);
@@ -21,7 +21,7 @@ p {
   font-style: normal;
 }
 h3 {
-  font-size: 2rem;
+  font-size: 1.75rem;
   margin: 1rem 0 0 0;
 }
 .main-nav-bar {
@@ -49,6 +49,7 @@ h3 {
   background: var(--primary-font-color);
   border: 1px solid transparent;
   color: var(--background-color);
+  font-weight: bold;
 }
 
 .nav-button:focus {
