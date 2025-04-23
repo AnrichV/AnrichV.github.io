@@ -92,7 +92,7 @@ h3 {
   display: none;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 513px) {
   .main-nav-container {
     display: flex;
     flex-direction: column;
