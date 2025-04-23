@@ -29,7 +29,7 @@ h3 {
 }
 .my-name {
   font-size: 1.75rem;
-  margin: 1rem 0 0 0;
+  margin: 1rem 0;
 }
 .main-nav-bar {
   display: flex;
@@ -48,6 +48,7 @@ h3 {
   border: 1px solid var(--border-color);
   border-radius: 1rem;
   cursor: pointer;
+  color: var(--primary-font-color);
 }
 
 .nav-button:hover {
