@@ -31,10 +31,11 @@
     <!-- On Mobile:This script detects when something other than the menu is selected and closes it. -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
+            const toggle = document.getElementById('menu-toggle');
+            const menu = document.querySelector('.main-nav-bar');
+            const icon = document.querySelector('.menu-icon');
             document.addEventListener('click', function (e) {
-                const toggle = document.getElementById('menu-toggle');
-                const menu = document.querySelector('.main-nav-bar');
-                const icon = document.querySelector('.menu-icon');
+
 
                 // Don't do anything if toggle is not found (optional guard)
                 if (!toggle || !menu || !icon) return;
@@ -44,6 +45,11 @@
                     !menu.contains(e.target) &&
                     !icon.contains(e.target) &&
                     e.target !== toggle) {
+                    toggle.checked = false;
+                }
+            });
+            window.addEventListener('scroll', function () {
+                if (toggle.checked) {
                     toggle.checked = false;
                 }
             });
@@ -73,7 +79,7 @@
                 <span class="my-name">Anrich Van der Walt</span>
                 <span class="sub-heading">Web Designer, Fullstack Developer, 3D Artist, Graphic Designer</span>
             </div>
-            <div class="about-me-conent">
+            <div class="about-me-content">
                 <h1>About Me</h1>
                 <p>I am a Website Maintenance Assistant at Konsortium Solutions, I focus on creating and maintaining
                     WordPress Web pages and Websites for our clients. With a degree in Computer Generated Multimedia, I
