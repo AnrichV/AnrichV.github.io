@@ -38,7 +38,7 @@ h3 {
   flex-direction: column;
   align-items: center;
   background: linear-gradient(var(--background-color) 10%, transparent 75%);
-  z-index: 9999;
+  z-index: 4;
   height: 5rem;
 }
 .my-name {
@@ -86,6 +86,75 @@ h3 {
   background: var(--primary-font-color);
   border: 1px solid transparent;
   color: var(--background-color);
+}
+#menu-toggle,
+.menu-icon {
+  display: none;
+}
+
+@media only screen and (max-width: 400px) {
+  .main-nav-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0;
+  }
+  /* Hide horizontal menu */
+  .main-nav-bar {
+    display: none;
+    flex-direction: column;
+    margin: 1rem 0 0 -2.5rem !important;
+  }
+
+  /* Show menu when checkbox is checked */
+  #menu-toggle:checked + .menu-icon + .main-nav-bar {
+    display: flex;
+  }
+
+  .main-nav-bar {
+    top: 0;
+  }
+
+  /* Show hamburger */
+  #menu-toggle,
+  .menu-icon {
+    align-self: flex-start;
+    display: block;
+    margin: 1rem;
+  }
+  #menu-toggle {
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+
+  .menu-icon {
+    width: 2rem;
+    height: 1.75rem;
+    position: relative;
+    cursor: pointer;
+  }
+  .main-nav-bar {
+    margin-top: 3rem;
+  }
+  .menu-icon span {
+    background: var(--sedonary-font-color);
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+
+  .menu-icon span:nth-child(1) {
+    top: 0;
+  }
+  .menu-icon span:nth-child(2) {
+    top: 10px;
+  }
+  .menu-icon span:nth-child(3) {
+    top: 20px;
+  }
 }
 
 main {
