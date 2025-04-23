@@ -119,6 +119,9 @@ img {
 }
 
 .project-carousal {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
   width: 100%;
 }
 .project {
@@ -135,6 +138,18 @@ img {
   aspect-ratio: 16/9;
   cursor: pointer;
   z-index: 3;
+  display: flex;
+  align-content: center;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.notification {
+  color: maroon;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 iframe {
   border: none;
