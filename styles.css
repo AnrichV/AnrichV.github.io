@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
 :root {
   --background-color: #010a0a;
   --primary-font-color: #fff8ff;
@@ -9,8 +10,10 @@
 }
 body {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   box-sizing: border-box;
+  margin: 0;
   font-family: "Space Mono", monospace;
   font-size: 1.25rem;
   color: var(--primary-font-color);
@@ -27,6 +30,17 @@ h2 {
 h3 {
   font-size: 0.93rem;
 }
+.main-nav-container {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(var(--background-color) 10%, transparent 75%);
+  z-index: 9999;
+  height: 5rem;
+}
 .my-name {
   font-size: 1.75rem;
   margin: 1rem 0;
@@ -40,6 +54,12 @@ h3 {
   border-radius: 1rem;
   background: var(--secondary-color);
   border: 1px solid var(--border-color);
+}
+
+.gradient-bg {
+  position: absolute;
+  /*  */
+  width: 100%;
 }
 
 .nav-button {
@@ -124,11 +144,13 @@ img {
   flex-direction: row;
   gap: 2rem;
   width: 100%;
+  overflow: auto;
 }
 .project {
   position: relative;
   display: flex;
   width: 25rem;
+  min-width: 25rem;
   aspect-ratio: 16/9;
   border-radius: 1rem;
   overflow: hidden;
@@ -191,4 +213,8 @@ iframe {
 }
 .web-development {
   background-color: green;
+}
+
+#contact {
+  height: 50vh;
 }
