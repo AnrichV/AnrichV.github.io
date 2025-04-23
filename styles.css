@@ -11,7 +11,7 @@ body {
   display: flex;
   justify-content: center;
   font-family: "Space Mono", monospace;
-  font-size: 1.75rem;
+  font-size: 1.25rem;
   color: var(--primary-font-color);
   background-color: var(--background-color);
 }
@@ -20,7 +20,10 @@ p {
   font-optical-sizing: auto;
   font-style: normal;
 }
-h3 {
+h2 {
+  font-size: 1.5rem;
+}
+.my-name {
   font-size: 1.75rem;
   margin: 1rem 0 0 0;
 }
