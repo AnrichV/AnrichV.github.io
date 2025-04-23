@@ -10,6 +10,7 @@
 body {
   display: flex;
   justify-content: center;
+  box-sizing: border-box;
   font-family: "Space Mono", monospace;
   font-size: 1.25rem;
   color: var(--primary-font-color);
@@ -22,6 +23,9 @@ p {
 }
 h2 {
   font-size: 1.5rem;
+}
+h3 {
+  font-size: 0.93rem;
 }
 .my-name {
   font-size: 1.75rem;
@@ -112,4 +116,47 @@ img {
 #about p {
   font-size: 1.5rem;
   text-align: justify;
+}
+
+.project-carousal {
+  width: 100%;
+}
+.project {
+  position: relative;
+  display: flex;
+  width: 25rem;
+  aspect-ratio: 16/9;
+}
+iframe {
+  border: none;
+  border-radius: 1rem;
+  height: 100%;
+  aspect-ratio: 16/9;
+}
+
+.chips-wrapper {
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-self: flex-end;
+  z-index: 2;
+  gap: 0.5rem;
+  padding: 0 0.5rem;
+}
+
+.web-design,
+.web-development {
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.web-design {
+  background-color: blue;
+}
+.web-development {
+  background-color: green;
 }
