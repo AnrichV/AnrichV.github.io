@@ -102,6 +102,7 @@ main {
   gap: 3rem;
   margin: 5rem 0;
   width: 100%;
+  flex-wrap: wrap;
 }
 
 .image-wrapper {
