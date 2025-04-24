@@ -135,9 +135,14 @@ img {
   padding-top: 0;
 }
 .about-me-content {
+  display: flex;
+  flex: 1 1;
+  flex-direction: column;
+  align-items: flex-start;
   align-self: flex-start;
-  width: 60%;
-  min-width: 40rem;
+  width: auto;
+  min-width: 60%;
+  max-width: 100%;
 }
 #about p {
   font-size: 1.5rem;
@@ -312,12 +317,11 @@ iframe {
 .date {
   color: var(--secondary-font-color);
 }
-@media only screen and (max-width: 1409px) {
+@media only screen and (max-width: 1215px) {
   .about-me-content {
-    width: 100%;
+    align-items: center;
   }
 }
-
 @media only screen and (max-width: 755px) {
   .about-me-content,
   .image-wrapper {
@@ -334,7 +338,7 @@ iframe {
     position: relative;
     display: none;
     flex-direction: column;
-    margin: 1rem 0 0 -3rem !important;
+    margin: 0.5rem 0 0 -3rem !important;
     top: 0;
   }
 
@@ -348,7 +352,7 @@ iframe {
   .menu-icon {
     align-self: flex-start;
     display: block;
-    margin: 1rem;
+    margin: 0.5rem 1rem;
   }
   #menu-toggle {
     width: 2rem;
