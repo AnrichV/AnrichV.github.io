@@ -119,7 +119,7 @@ main {
   border-radius: 2rem;
 }
 
-img {
+.image-wrapper img {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -316,6 +316,21 @@ iframe {
 }
 .date {
   color: var(--secondary-font-color);
+}
+.socials {
+  display: flex;
+  margin-top: 2rem;
+  align-self: flex-end;
+  gap: 1rem;
+}
+.socials a {
+  color: var(--secondary-font-color);
+}
+.socials a:hover {
+  color: var(--primary-font-color);
+}
+.social-icon img {
+  width: 1rem !important;
 }
 @media only screen and (max-width: 1215px) {
   .about-me-content {
