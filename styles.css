@@ -223,24 +223,17 @@ iframe {
 #contact {
   height: 50vh;
 }
-@media only screen and (max-width: 700px) {
-  .about-me-content,
-  .image-wrapper {
-    min-width: 100% !important;
+
+@media only screen and (max-width: 1409px) {
+  .about-me-content {
+    width: 100%;
   }
 }
 
-@media only screen and (max-width: 513px) {
-  #about p {
-    font-size: 1.5rem;
-    text-align: justify;
-  }
-  h1 {
-    text-align: center;
-  }
-
-  #about {
-    margin: 0 auto;
+@media only screen and (max-width: 755px) {
+  .about-me-content,
+  .image-wrapper {
+    min-width: 100% !important;
   }
   .main-nav-container {
     display: flex;
@@ -310,14 +303,26 @@ iframe {
   .menu-icon span:nth-child(3) {
     top: 20px;
   }
-  main {
-    max-width: 90%;
-  }
-  #about {
-    max-width: 100%;
-  }
   .main-nav-container {
     background: transparent;
+  }
+  #about {
+    margin: 0 auto !important;
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 513px) {
+  #about p {
+    font-size: 1.5rem;
+    text-align: justify;
+  }
+  h1 {
+    text-align: center;
+  }
+
+  main {
+    max-width: 90%;
   }
   .image-wrapper {
     justify-content: center;
