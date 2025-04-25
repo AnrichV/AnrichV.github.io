@@ -56,24 +56,36 @@
         });
     </script>
 
-    <div class="main-nav-container">
-        <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="menu-icon">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
-        <nav class="main-nav-bar">
-            <a class="nav-button about-link" href="#about">About Me</a>
-            <a class="nav-button my-work-link" href="#my-work">My Work</a>
-            <a class="nav-button experience-link" href="#experience">My Experience</a>
-            <a class="nav-button contact-link" href="#contact">Contact Me</a>
-        </nav>
-    </div>
 
-
+    <header>
+        <div class="main-nav-container">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-menu">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </label>
+            <nav class="main-nav-bar">
+                <a class="nav-button about-link" href="#top">About Me</a>
+                <a class="nav-button my-work-link" href="#my-work">My Work</a>
+                <a class="nav-button experience-link" href="#experience">My Experience</a>
+                <a class="nav-button contact-link" href="#contact">Contact Me</a>
+            </nav>
+        </div>
+    </header>
 
     <main>
+        <a id="top"></a>
+        <a class="jump-to-top" href="#top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" class="feather feather-arrow-up">
+                <line x1="12" y1="19" x2="12" y2="5"></line>
+                <polyline points="5 12 12 5 19 12"></polyline>
+            </svg></a>
         <section id="about">
             <div class="image-wrapper">
                 <img src="Assets/Images/Profile Picture.jpg">
@@ -128,7 +140,7 @@
         </section>
         <section id="my-work">
             <h1>My Work</h1>
-            <div class="web-DnD-projects">
+            <div class=" project-section web-DnD-projects">
                 <h2>Web Design & Development</h2>
                 <div class="project-carousal">
                     <div class="project">
@@ -164,7 +176,7 @@
                 </div>
 
             </div>
-            <div class="threeD-Art-projects">
+            <div class="project-section threeD-Art-projects">
                 <h2>3D Art</h2>
                 <div class="project-carousal">
                     <div class="project">
@@ -198,7 +210,7 @@
                 </div>
 
             </div>
-            <div class="Graphic Design">
+            <div class="project-section Graphic Design">
                 <h2>Graphic Design</h2>
                 <div class="project-carousal">
                     <div class="project">
@@ -576,8 +588,12 @@
         </section>
         <section id="contact">
             <h1>Contact</h1>
+            <h2>You can reach me via email.</h2>
+            <a href="mailto:anrich.vanderwalt@gmail.com">anrich.vanderwalt@gmail.com</a>
+            <span>Thank you for visiting!</span>
         </section>
     </main>
+    <footer>Website by Anrich van der Walt</footer>
 </body>
 
 </html>
