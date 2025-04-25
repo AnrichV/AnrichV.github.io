@@ -404,6 +404,14 @@ iframe {
   .about-me-content {
     align-items: center;
   }
+  h1,
+  h2 {
+    text-align: center;
+  }
+  .socials {
+    align-self: center;
+    margin: 2rem;
+  }
 }
 @media only screen and (max-width: 755px) {
   .about-me-content,
@@ -499,6 +507,9 @@ iframe {
     padding: 1rem;
     justify-self: center !important;
     align-items: center !important;
+  }
+  h4 {
+    text-align: center;
   }
 }
 
