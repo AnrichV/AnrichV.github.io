@@ -206,9 +206,7 @@ iframe {
   padding: 0 0.5rem;
 }
 
-.web-design,
-.web-development,
-.threeD-Art {
+.chip {
   padding: 0.2rem 0.5rem;
   border-radius: 0.5rem;
   font-size: 1rem;
@@ -231,6 +229,9 @@ iframe {
 }
 .web-development {
   background-color: green;
+}
+.graphic-Design {
+  background-color: magenta;
 }
 
 #contact {
