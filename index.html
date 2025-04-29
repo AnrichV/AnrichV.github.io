@@ -24,7 +24,7 @@
 
     <!-- On Mobile:This script detects when something other than the menu is selected and closes it. -->
     <header>
-        <div class="main-nav-container">
+        <!-- <div class="main-nav-container">
             <input type="checkbox" id="menu-toggle">
             <label for="menu-toggle" class="menu-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -36,6 +36,25 @@
                 </svg>
             </label>
             <nav class="main-nav-bar">
+                <a class="nav-button about-link" href="#top">About Me</a>
+                <a class="nav-button my-work-link" href="#my-work">My Work</a>
+                <a class="nav-button experience-link" href="#experience">My Experience</a>
+                <a class="nav-button contact-link" href="#contact">Contact Me</a>
+            </nav>
+        </div> -->
+        <div class="main-nav-container">
+            <button id="menu-toggle" class="menu-icon" aria-label="Toggle menu" aria-expanded="false"
+                aria-controls="main-nav-bar" onclick="toggleMenu(this)">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-menu">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+
+            <nav class="main-nav-bar" id="main-nav-bar">
                 <a class="nav-button about-link" href="#top">About Me</a>
                 <a class="nav-button my-work-link" href="#my-work">My Work</a>
                 <a class="nav-button experience-link" href="#experience">My Experience</a>
