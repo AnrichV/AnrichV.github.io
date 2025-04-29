@@ -6,59 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anrich van der Walt</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/x-icon" href="Assets\Images\Profile Picture.jpg">
-    <meta property="og:image" content="Assets\Images\Profile Picture.jpg" />
+    <link rel="icon" type="image/x-icon" href="../assets/Images/Profile Picture.jpg">
+    <meta property="og:image" content="../assets/Images/Profile Picture.jpg" />
+
 </head>
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const toggle = document.getElementById('menu-toggle');
-        const menu = document.querySelector('.main-nva-bar');
-        const icon = document.querySelector('.menu-icon');
 
-        document.addEventListener('click', function (e) {
-            if (!toggle.checked) return; // Only do this if the menu is open
-
-            if (
-                !menu.contains(e.target) &&
-                !icon.contains(e.target) &&
-                e.target !== toggle
-            ) {
-                toggle.checked = false;
-            }
-        });
-    });
-</script>
 
 <body>
+
     <!-- On Mobile:This script detects when something other than the menu is selected and closes it. -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const toggle = document.getElementById('menu-toggle');
-            const menu = document.querySelector('.main-nav-bar');
-            const icon = document.querySelector('.menu-icon');
-            document.addEventListener('click', function (e) {
-
-
-                // Don't do anything if toggle is not found (optional guard)
-                if (!toggle || !menu || !icon) return;
-
-                // Only close the menu if it's open and click is outside
-                if (toggle.checked &&
-                    !menu.contains(e.target) &&
-                    !icon.contains(e.target) &&
-                    e.target !== toggle) {
-                    toggle.checked = false;
-                }
-            });
-            window.addEventListener('scroll', function () {
-                if (toggle.checked) {
-                    toggle.checked = false;
-                }
-            });
-        });
-    </script>
-
-
     <header>
         <div class="main-nav-container">
             <input type="checkbox" id="menu-toggle">
@@ -90,7 +46,7 @@
             </svg></a>
         <section id="about">
             <div class="image-wrapper">
-                <img src="Assets/Images/Profile Picture.jpg">
+                <img src="../assets/Images/Profile Picture.jpg">
                 <span class="my-name">Anrich Van der Walt</span>
                 <span class="sub-heading">Web Designer, Fullstack Developer, 3D Artist, Graphic Designer</span>
             </div>
@@ -596,6 +552,7 @@
         </section>
     </main>
     <footer>Website by Anrich van der Walt</footer>
+    <script src="./app.js" defer></script>
 </body>
 
 </html>
