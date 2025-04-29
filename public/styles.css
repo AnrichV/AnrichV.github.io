@@ -260,9 +260,11 @@ iframe {
 ::-webkit-scrollbar-track {
   background: rgba(0, 0, 0, 0.5);
   border: 1px solid var(--border-color);
-  margin-top: 1rem;
   border-radius: 0.2rem;
   cursor: pointer;
+}
+.project-carousal::-webkit-scrollbar-track {
+  margin-top: 1rem;
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
