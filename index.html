@@ -62,8 +62,13 @@
         </button>
         <section id="about">
             <div class="image-wrapper">
-                <img src="https://res.cloudinary.com/ddg6fgafy/image/upload/v1746180751/Profile_Picture_wcip4a.webp"
-                    alt="A portrait picture of Anrich van der Walt.">
+                <picture>
+                    <source media="(max-width: 768px)"
+                        srcset="https://res.cloudinary.com/ddg6fgafy/image/upload/q_auto,f_auto/v1746180751/Profile_Picture_wcip4a.webp"
+                        type="image/webp">
+                    <img src="https://res.cloudinary.com/ddg6fgafy/image/upload/v1746180751/Profile_Picture_wcip4a.webp"
+                        alt="A portrait picture of Anrich van der Walt.">
+                </picture>
                 <span class="my-name">Anrich Van der Walt</span>
                 <span class="sub-heading">Web Designer, Fullstack Developer, 3D Artist, Graphic Designer</span>
             </div>
