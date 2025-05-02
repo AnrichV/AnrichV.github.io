@@ -19,25 +19,68 @@ body {
   color: var(--primary-font-color);
   background-color: var(--background-color);
 }
+
 header {
   position: absolute;
   left: 0;
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  max-width: 70%;
+}
+
 footer {
   color: var(--secondary-font-color);
   margin-top: 2rem;
   font-size: 1rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 0.93rem;
 }
 p {
   font-family: "Quicksand", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
-h2 {
-  font-size: 1.5rem;
+
+iframe {
+  border: none;
+  height: 100%;
+  aspect-ratio: 16/9;
 }
-h3 {
-  font-size: 0.93rem;
+/* width */
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid var(--border-color);
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+.project-carousal::-webkit-scrollbar-track {
+  margin-top: 1rem;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 0.2rem;
+  cursor: pointer;
+  scroll-padding: 1rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-font-color);
 }
 .main-nav-container {
   position: fixed;
@@ -50,10 +93,7 @@ h3 {
   z-index: 4;
   height: 5rem;
 }
-.my-name {
-  font-size: 1.75rem;
-  margin: 1rem 0;
-}
+
 .main-nav-bar {
   display: flex;
   top: 1rem;
@@ -63,6 +103,10 @@ h3 {
   border-radius: 1rem;
   background: var(--secondary-color);
   border: 1px solid var(--border-color);
+}
+.my-name {
+  font-size: 1.75rem;
+  margin: 1rem 0;
 }
 
 .gradient-bg {
@@ -99,13 +143,6 @@ h3 {
 #menu-toggle,
 .menu-icon {
   display: none;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  margin-top: 3rem;
-  max-width: 70%;
 }
 
 #about {
@@ -197,11 +234,6 @@ main {
   text-transform: uppercase;
   font-weight: bold;
 }
-iframe {
-  border: none;
-  height: 100%;
-  aspect-ratio: 16/9;
-}
 
 .chips-wrapper {
   box-sizing: border-box;
@@ -249,34 +281,6 @@ iframe {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-}
-
-/* width */
-::-webkit-scrollbar {
-  width: 1rem;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0.5);
-  border: 1px solid var(--border-color);
-  border-radius: 0.2rem;
-  cursor: pointer;
-}
-.project-carousal::-webkit-scrollbar-track {
-  margin-top: 1rem;
-}
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: var(--border-color);
-  border-radius: 0.2rem;
-  cursor: pointer;
-  scroll-padding: 1rem;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: var(--primary-font-color);
 }
 
 .experience {
@@ -342,6 +346,7 @@ iframe {
   cursor: pointer;
 }
 .date {
+  font-size: 0.93rem;
   color: var(--secondary-font-color);
 }
 .socials {
@@ -406,6 +411,7 @@ button {
   color: var(--secondary-color);
   border: 1px solid transparent;
 }
+
 @media only screen and (max-width: 1215px) {
   .about-me-content {
     align-items: center;
@@ -419,6 +425,7 @@ button {
     margin: 2rem;
   }
 }
+
 @media only screen and (max-width: 755px) {
   .about-me-content,
   .image-wrapper {
@@ -517,8 +524,8 @@ button {
     justify-content: center;
   }
   .project {
-    width: 20rem;
-    min-width: 20rem;
+    width: 15rem;
+    min-width: 15rem;
     aspect-ratio: 16/9 !important;
   }
   .project-title {
