@@ -525,11 +525,17 @@ button {
     justify-content: center;
   }
   .project {
-    width: 15rem;
-    min-width: 15rem;
+    width: 20rem;
+    min-width: 20rem;
     aspect-ratio: 16/9 !important;
   }
   .project-title {
     font-size: 1rem;
+  }
+  .chip {
+    font-size: 0.75rem;
+  }
+  .notification {
+    font-size: 1.75rem;
   }
 }
