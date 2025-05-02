@@ -1,7 +1,7 @@
 :root {
   --background-color: #010a0a;
   --primary-font-color: #fff8ff;
-  --secondary-font-color: #697777;
+  --secondary-font-color: #909d9d;
   --secondary-color: #021313;
   --border-color: #073a3a;
 }
@@ -273,7 +273,7 @@ address {
   background-color: green;
 }
 .graphic-Design {
-  background-color: magenta;
+  background-color: #9e009e;
 }
 
 #contact {
