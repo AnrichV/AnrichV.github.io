@@ -512,7 +512,7 @@ button {
 @media only screen and (max-width: 513px) {
   #about p {
     font-size: 1.5rem;
-    text-align: justify;
+    text-align: center;
   }
   h1 {
     text-align: center;
@@ -537,5 +537,9 @@ button {
   }
   .notification {
     font-size: 1.75rem;
+  }
+
+  .experience p {
+    text-align: center;
   }
 }
