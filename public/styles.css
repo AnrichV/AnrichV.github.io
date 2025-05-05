@@ -41,6 +41,7 @@ h2 {
 h3 {
   font-size: 0.93rem;
 }
+
 p {
   font-family: "Quicksand", sans-serif;
   font-optical-sizing: auto;
@@ -294,6 +295,9 @@ address {
   border: 1px solid var(--border-color);
   margin-bottom: 1rem;
   border-radius: 2rem;
+}
+.experience h2 {
+  text-align: center;
 }
 #experience {
   position: relative;
