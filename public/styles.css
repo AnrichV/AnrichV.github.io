@@ -195,7 +195,6 @@ address {
 #about p {
   font-size: 1.5rem;
   text-align: justify;
-  hyphens: auto;
 }
 
 .project-carousal {
@@ -515,6 +514,7 @@ button {
 @media only screen and (max-width: 513px) {
   #about p {
     font-size: 1.5rem;
+    text-align: center;
   }
   h1 {
     text-align: center;
@@ -543,5 +543,9 @@ button {
 
   .experience h3 {
     text-align: center;
+  }
+
+  .experience p {
+    text-align: center !important;
   }
 }
