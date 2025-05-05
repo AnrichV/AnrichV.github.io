@@ -296,9 +296,7 @@ address {
   margin-bottom: 1rem;
   border-radius: 2rem;
 }
-.experience h2 {
-  text-align: center;
-}
+
 #experience {
   position: relative;
   display: flex;
@@ -541,6 +539,10 @@ button {
   }
   .notification {
     font-size: 1.75rem;
+  }
+
+  .experience h2 {
+    text-align: center;
   }
 
   .experience p {
