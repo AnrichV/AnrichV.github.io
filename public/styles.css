@@ -542,7 +542,7 @@ button {
   }
 
   .experience h2 {
-    text-align: center;
+    text-align: center !important;
   }
 
   .experience p {
