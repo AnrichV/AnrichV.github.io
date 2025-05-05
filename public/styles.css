@@ -541,8 +541,8 @@ button {
     font-size: 1.75rem;
   }
 
-  .experience h2 {
-    text-align: center !important;
+  .experience h3 {
+    text-align: center;
   }
 
   .experience p {
