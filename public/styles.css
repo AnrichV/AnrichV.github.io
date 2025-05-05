@@ -195,6 +195,7 @@ address {
 #about p {
   font-size: 1.5rem;
   text-align: justify;
+  hyphens: auto;
 }
 
 .project-carousal {
@@ -543,9 +544,5 @@ button {
 
   .experience h3 {
     text-align: center;
-  }
-
-  .experience p {
-    text-align: center !important;
   }
 }
